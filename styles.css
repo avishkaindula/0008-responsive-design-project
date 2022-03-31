@@ -24,6 +24,20 @@ a {
   text-transform: uppercase;
 }
 
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
 #main-header ul {
   list-style: none;
   display: flex;
@@ -100,15 +114,15 @@ main h1 {
 }
 
 /* h2 { */
-  /* font-size: 100%; */
-  /* .food-item-content is the parent of h2. By setting the font-size of h2
+/* font-size: 100%; */
+/* .food-item-content is the parent of h2. By setting the font-size of h2
   into 100% we mean that it should take 100% of the size of it's parent's
   font-size. Which is 24px. */
-  /* if the parent has no font-size defined, then it takes the 100% value
+/* if the parent has no font-size defined, then it takes the 100% value
   of the font-size defined on the browser settings. */
 
-  /* font-size: 2em; */
-  /* em unit behave as same as the % unit. 
+/* font-size: 2em; */
+/* em unit behave as same as the % unit. 
   1em = 100%
   2em = 200%
   .food-item-content is the parent of h2. By setting the font-size of h2
@@ -117,8 +131,8 @@ main h1 {
   if the parent has no font-size defined, then it takes the 200% value
   of the font-size defined on the browser settings. */
 
-  /* font-size: 2rem; */
-  /* rem unit doesn't depend on the parent's font-size.
+/* font-size: 2rem; */
+/* rem unit doesn't depend on the parent's font-size.
   Instead it always relative to the font-size defined in the browser
   settings.(or the root element's font size. [root element means html {} element.]) 
   2rem = 200% of the font-size defined on the browser settings. */
@@ -135,13 +149,27 @@ main h1 {
   background-color: rgb(221, 134, 34);
 }
 
-@media (max-width: 768px) {
-  #latest-products ul {
-    grid-template-columns: 100%;
-  }
-}
+/* @media (max-width: 768px) {            */
+/*    #latest-products ul {               */
+/*      grid-template-columns: 100%;      */
+/*    }                                   */
+/* }                                      */
 /* This code executes when the width is lower than 768px.  */
 /* The media query code should be written "after" the #latest-products ul code.
 If not the code won't be executed. */
 /* max-width is used when we start from desktop first design. */
 /* min-width is used when we start from desktop first design. */
+
+@media (max-width: 48rem) {
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  #latest-products ul {
+    grid-template-columns: 100%;
+  }
+
+  #main-header nav {
+    display: none;
+  }
+}
