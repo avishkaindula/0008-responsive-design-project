@@ -84,11 +84,15 @@ main h1 {
   /* In a non font-size context, the percentage value refers to "other" properties.
   In this case "padding" value refers to the value of the "Width". */
 
-  padding: 0.1em;
+  /* padding: 0.1em; */
   /* em and rem always refers to the "font-size" property. for em, the calculation
   is based on the font-size of the element itself.
   In this case, padding takes 10% of the value of the font-size of the .food-item-content. 
   Which is 2.4px */
+
+  padding: 0.1rem;
+  /* for rem in non font-size context, the calculation is based on the "font-size" defined 
+  on the browser settings. (or the root element.) */
   text-align: center;
   font-size: 24px;
 }
