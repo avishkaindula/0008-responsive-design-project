@@ -81,7 +81,7 @@ main h1 {
   font-size: 24px;
 }
 
-h2 { 
+h2 {
   /* font-size: 100%; */
   /* .food-item-content is the parent of h2. By setting the font-size of h2
   into 100% we mean that it should take 100% of the size of it's parent's
@@ -89,7 +89,7 @@ h2 {
   /* if the parent has no font-size defined, then it takes the 100% value
   of the font-size defined on the browser settings. */
 
-  font-size: 2em;
+  /* font-size: 2em; */
   /* em unit behave as same as the % unit. 
   1em = 100%
   2em = 200%
@@ -98,6 +98,12 @@ h2 {
   font-size. Which is 48px.
   if the parent has no font-size defined, then it takes the 200% value
   of the font-size defined on the browser settings. */
+
+  font-size: 2rem;
+  /* rem unit doesn't depend on the parent's font-size.
+  Instead it always relative to the font-size defined in the browser
+  settings.(or the root element's font size. [root element means html {} element.]) 
+  2rem = 200% of the font-size defined on the browser settings. */
 }
 
 .btn {
