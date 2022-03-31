@@ -76,7 +76,13 @@ main h1 {
 }
 
 .food-item-content {
-  padding: 16px;
+  /* padding: 16px; */
+  padding: 10%;
+  /* this is 10% of the parent element. Which in this case is <article> element.
+  But there's no padding defined for the <article> elements. So this takes
+  10% of the "Width" of the <article> element. */
+  /* In a non font-size context, the percentage value refers to "other" properties.
+  In this case "padding" value refers to the value of the "Width". */
   text-align: center;
   font-size: 24px;
 }
