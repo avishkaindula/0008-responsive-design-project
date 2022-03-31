@@ -134,3 +134,14 @@ main h1 {
 .btn:hover {
   background-color: rgb(221, 134, 34);
 }
+
+@media (max-width: 768px) {
+  #latest-products ul {
+    grid-template-columns: 100%;
+  }
+}
+/* This code executes when the width is lower than 768px.  */
+/* The media query code should be written "after" the #latest-products ul code.
+If not the code won't be executed. */
+/* max-width is used when we start from desktop first design. */
+/* min-width is used when we start from desktop first design. */
