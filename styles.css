@@ -78,6 +78,16 @@ main h1 {
 .food-item-content {
   padding: 16px;
   text-align: center;
+  font-size: 24px;
+}
+
+h2 { 
+  font-size: 100%;
+  /* .food-item-content is the parent of h2. By setting the font-size of h2
+  into 100% we mean that it should take 100% of the size of it's parent's
+  font-size. Which is 24px. */
+  /* if the parent has no font-size defined, then it takes the 100% value
+  of the font-size defined on the browser settings. */
 }
 
 .btn {
